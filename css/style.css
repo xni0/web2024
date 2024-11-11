@@ -1,0 +1,515 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color: rgb(225, 245, 253);
+}
+
+.text-right {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-3 {
+    padding: 16px 0;
+}
+
+.px-3 {
+    padding: 0 16px;
+}
+
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+    #menu {
+        display: block;
+    }
+}
+
+.etiqueta {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.etiquetados {
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.imagenyoutube {
+    width: 200px;
+    height: auto;
+}
+
+.imageniconoflecha {
+    width: 50px;
+    height: auto;
+}
+
+.custom-list {
+    list-style-image: url('/img/corazon.png');
+
+
+}
+
+.subrayado {
+    background-color: yellow;
+    padding: 0 2px;
+    display: inline;
+
+}
+
+.fondo_celda {
+    background-color: blue;
+
+}
+
+.color {
+    color: white;
+}
+
+#color {
+    color: white;
+}
+
+.fila_uno {
+
+    background-color: green;
+
+}
+
+.fila_dos {
+
+    background-color: pink;
+}
+
+.titulos_horas {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    color: #2c727f;
+
+}
+
+.titulo_horario {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #f0f0f0;
+    color: #2c727f;
+
+}
+
+.subtitulo_horario {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#subtitulo_horario {
+    color: #2c727f;
+}
+
+.titulo_recreo {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    color: #2c727f;
+}
+
+.lenguaje_marcas {
+    text-align: center;
+    background-color: #64b4ef;
+    color: black;
+}
+
+.entornos {
+
+    text-align: center;
+    background-color: #94dd95;
+    color: black;
+
+}
+
+.programacion {
+
+    text-align: center;
+    background-color: #d2d26f;
+    color: black;
+}
+
+.proyecto {
+
+    text-align: center;
+    background-color: #bc7877;
+    color: black;
+}
+
+.digitalizacion {
+
+    text-align: center;
+    background-color: #ffa264;
+    color: black;
+}
+
+.bases {
+    text-align: center;
+    background-color: #68a896;
+    color: black;
+}
+
+.ingles {
+
+    text-align: center;
+    background-color: #01df00;
+    color: black;
+}
+
+.sostenibilidad {
+
+    text-align: center;
+    background-color: #d1d3fd;
+    color: black;
+}
+
+.sisi {
+
+    text-align: center;
+    background-color: #0080ff;
+    color: black;
+}
+
+
+.fol {
+    text-align: center;
+    background-color: #eff0c5;
+    color: black;
+}
+
+
+
+.login-container_1 {
+    width: 50%;
+    
+}
+
+.login-container_2 {
+    width: 50%;
+    
+    
+}
+
+
+form.form-login {
+    width: 50%;
+    float: left;
+    padding: 0 40px;
+}
+form.form-registro {
+    width: 50%;
+    float: right;
+    padding: 0 40px;
+}
+form.form-login fieldset{
+    width: 60%;
+}
+form.form-html5 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+form.form-html5 fieldset {
+    padding: 0 30px;
+    background-color: #e2fafa;
+}
+form.form-html5 legend {
+    background-color: rgb(10, 3, 70);
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+}
+form.form-html5 label {
+    background-color: rgb(102, 72, 207);
+    color: white;
+}
+.cb {
+    clear: both;
+}
+.btn {
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.btn-red {
+    background-color: rgb(78, 6, 6);
+    color: white;
+}
+.btn-blue {
+    background-color: rgb(22, 3, 68);
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .lightbox-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .lightbox-gallery div > img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .lightbox-gallery div {
+    margin: 10px;
+    flex-basis: 180px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .lightbox-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lightbox > div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /*Lighbox CSS*/
+  
+  .lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  .lightbox img {
+    display: block;
+    margin: auto;
+  }
+  
+  .lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+  }
+  
+  

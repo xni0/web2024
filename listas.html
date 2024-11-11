@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/img/ordenador-portatil.png">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3 <img src="/img/dispositivos-responsivos.png" ></h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home" class="py-3">
+                    <h2 class="text-center">LISTAS</h2>
+
+                    <p><strong>Listas desordenadas</strong></p>
+                    <ul> 
+                        <li>Lista 1</li> 
+                        <li>Lista 2</li> 
+                        <li>Lista 3</li> 
+                        <li>Lista 4</li> 
+                 </ul>
+
+                 <p><strong>Listas ordenadas</strong></p>
+                 <ol>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                    <li>Tercer elemento</li>
+                  </ol>
+
+                <p><strong>Listas desordenadas de varios niveles</strong></p>
+                <ul>
+                    <li>Primer nivel - Elemento 1</li>
+                    <li>Primer nivel - Elemento 2
+                      <ul>
+                        <li>Segundo nivel - Elemento 1</li>
+                        <li>Segundo nivel - Elemento 2
+                          <ul>
+                            <li>Tercer nivel - Elemento 1</li>
+                            <li>Tercer nivel - Elemento 2</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Primer nivel - Elemento 3</li>
+                  </ul>
+
+                <p><strong>Listas Ordenadas de varios niveles</strong></p>
+                <ol>
+                    <li>Primer nivel - Elemento 1</li>
+                    <li>Primer nivel - Elemento 2
+                      <ol>
+                        <li>Segundo nivel - Elemento 1</li>
+                        <li>Segundo nivel - Elemento 2</li>
+                      </ol>
+                    </li>
+                    <li>Primer nivel - Elemento 3</li>
+                  </ol>
+                
+                <p><strong>Listas Desordenadas de varios niveles customizada</strong></p>
+                <ol type="I">
+                    <li>Primer nivel - Números romanos mayúsculas</li>
+                    <li>Primer nivel - Números romanos mayúsculas
+                      <ol type="A">
+                        <li>Segundo nivel - Letras mayúsculas</li>
+                        <li>Segundo nivel - Letras mayúsculas
+                          <ol type="i">
+                            <li>Tercer nivel - Números romanos minúsculas</li>
+                            <li>Tercer nivel - Números romanos minúsculas</li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </li>
+                    <li>Primer nivel - Números romanos mayúsculas</li>
+                  </ol>
+                
+                <p><strong>Listas Ordenadas de varios niveles customizada</strong></p>
+                <ol>
+                    <li>Primer Nivel - Elemento 1
+                      <ol>
+                        <li>Segundo Nivel - Elemento 1.1</li>
+                        <li>Segundo Nivel - Elemento 1.2
+                          <ol>
+                            <li>Tercer Nivel - Elemento 1.2.1</li>
+                            <li>Tercer Nivel - Elemento 1.2.2</li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </li>
+                    <li>Primer Nivel - Elemento 2
+                      <ol>
+                        <li>Segundo Nivel - Elemento 2.1</li>
+                        <li>Segundo Nivel - Elemento 2.2</li>
+                      </ol>
+                    </li>
+                    <li>Primer Nivel - Elemento 3</li>
+                  </ol>
+                
+                <p><strong>Listas Desordenadas de varios niveles Customizada con icono</strong></p>
+                <li>Primer Nivel - Elemento 1
+    <ul>
+      <li class="custom-list">Segundo Nivel - Elemento 1.1</li>
+      <li class="custom-list">Segundo Nivel - Elemento 1.2
+        <ul>
+    
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Primer Nivel - Elemento 2
+    <ul>
+      <li class="custom-list">Segundo Nivel - Elemento 2.1</li>
+      <li class="custom-list">Segundo Nivel - Elemento 2.2</li>
+    </ul>
+  </li>
+ 
+</ul>
+
+<p><strong>Listas de definición</strong></p>
+<dl>
+    <dt class="subrayado"><strong>HTML</strong></dt>
+    <dd>Lenguaje de marcado para crear páginas web.</dd>
+  
+    <dt class="subrayado"><strong>CSS</strong></dt>
+    <dd>Lenguaje de estilos usado para describir la presentación de un documento HTML.</dd>
+  
+    <dt class="subrayado"><strong>JavaScript</strong></dt>
+    <dd>Lenguaje de programación que permite crear contenido dinámico en las páginas web.</dd>
+  </dl>
+  
+
+
+                  
+                   
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Luci</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

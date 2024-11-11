@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/img/ordenador-portatil.png">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3 <img src="/img/dispositivos-responsivos.png" ></h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home" class="py-3">
+                    <h2 class="text-center">TABLAS</h2>
+                    
+                    <h3><strong>Tabla con encabeza de fila:</strong></h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>Edit</th>
+                                <th>Selection</th>
+                                <th>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>djnshkdjs</td> 
+                                <td>fgfgf</td>
+                                <td>ghfgfh</td>
+                                <td>dfggfg</td>
+                            </tr>
+                            <tr>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <h3><strong>Tabla con encabeza de columna:</strong></h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Mes</th>
+                                <td>xkjvhjkdfv</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Enero</th>
+                                <td>sjfjkddj</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Febrero</th>
+                                <td>fdkjndfkd</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Marzo</th>
+                                <td>sjknkdjkdf</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3><strong>Tabla con encabeza de fila y columna:</strong></h3>
+                    <table border="1">
+                        <thead>
+                            <tr class="fondo_celda">
+                                <th id="color">Mes</th>
+                                <th id="color">Ventas</th>
+                                <th id="color">Ganancias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="fondo_celda" id="color">Enero</th>
+                                <td>1000</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <th class="fondo_celda" id="color">Febrero</th>
+                                <td>1200</td>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <th class="fondo_celda" id="color">Marzo</th>
+                                <td>900</td>
+                                <td>450</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3><strong>Tabla con encabeza de fila y columna:</strong></h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Encabezado 1</th>
+                                <th>Encabezado 2</th>
+                                <th colspan="2">Encabezado 3 (Combina 2 columnas)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Fila 1, Col 1 (Combina 2 filas)</td>
+                                <td>Fila 1, Col 2</td>
+                                <td>Fila 1, Col 3</td>
+                                <td>Fila 1, Col 4</td>
+                            </tr>
+                            <tr>
+                                <td>Fila 2, Col 2</td>
+                                <td>Fila 2, Col 3</td>
+                                <td>Fila 2, Col 4</td>
+                            </tr>
+                            <tr>
+                                <td>Fila 3, Col 1</td>
+                                <td colspan="3">Fila 3 (Combina 3 columnas)</td>
+                            </tr>
+                            <tr>
+                                <td>Fila 4, Col 1</td>
+                                <td>Fila 4, Col 2</td>
+                                <td>Fila 4, Col 3</td>
+                                <td>Fila 4, Col 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3><strong>Tabla con diseño diferente filas pares impares</strong></h3>
+
+                    <table border="1">
+                        <thead>
+                            <tr class="fila_uno">
+                                <td>Encabezado 1</td>
+                                <td>Encabezado 2</td>
+                                <td>Encabezado 3</td>
+                                <td>Encabezado 4</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila_dos">
+                                <td>Fila 1, Col 1</td>
+                                <td>Fila 1, Col 2</td>
+                                <td>Fila 1, Col 3</td>
+                                <td>Fila 1, Col 4</td>
+                            </tr>
+                            <tr class="fila_uno">
+                                <td>Fila 2, Col 1</td>
+                                <td>Fila 2, Col 2</td>
+                                <td>Fila 2, Col 3</td>
+                                <td>Fila 2, Col 4</td>
+                            </tr>
+                            <tr class="fila_dos">
+                                <td>Fila 3, Col 1</td>
+                                <td>Fila 3, Col 2</td>
+                                <td>Fila 3, Col 3</td>
+                                <td>Fila 3, Col 4</td>
+                            </tr>
+                            <tr class="fila_uno">
+                                <td>Fila 4, Col 1</td>
+                                <td>Fila 4, Col 2</td>
+                                <td>Fila 4, Col 3</td>
+                                <td>Fila 4, Col 4</td>
+                            </tr>
+                            <tr class="fila_dos">
+                                <td>Fila 5, Col 1</td>
+                                <td>Fila 5, Col 2</td>
+                                <td>Fila 5, Col 3</td>
+                                <td>Fila 5, Col 4</td>
+                            </tr>
+                        </tbody>
+                    </table>  
+
+                    <h3><strong>Horario de clase</strong></h3>
+
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <td colspan="9" class="titulo_horario">S1DAM</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="subtitulo_horario">
+                                <td class="titulos_horas">/~\</td>
+                                <td id="subtitulo_horario">Lunes</td>
+                                <td id="subtitulo_horario">Martes</td>
+                                <td id="subtitulo_horario">Miercoles</td>
+                                <td id="subtitulo_horario">Jueves</td>
+                                <td id="subtitulo_horario">Viernes</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="titulos_horas">8:15 <br>
+                                    9:10
+                                </td>
+                                <td rowspan="2" class="lenguaje_marcas"> LMSG <br>
+                                    Puli. Mo, FrJo <br>
+                                    (1 B-301)
+                                </td>
+                                <td class="entornos">ENDE <br>
+                                    Polo Or, Ed <br>
+                                    (1 B-301)</td>
+                                <td  rowspan=3 class="sisi">SISI <br>
+                                    Anaya Se, Da <br>
+                                    (1 B-301) <br>
+                                    SISI <br>
+                                    Atie. Ib, JoEn <br>
+                                    (1 B-304)</td>
+                                <td rowspan="2" class="programacion">PROG <br>
+                                    Gall. Cr, Di <br>
+                                    (1 B-301)</td>
+                                <td rowspan="2" class="sisi">SISI <br>
+                                    Anaya Se, Da <br>
+                                    (1 B-301) <br>
+                                    SISI <br>
+                                    Atie. Ib, JoEn <br>
+                                    (1 B-304)</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="titulos_horas">
+                                    9:10 <br>
+                                    10:05
+                                </td>
+                                <td class="digitalizacion">DASP <br>
+                                    Moli., Cé <br>
+                                    (1 B-301)</td>
+    
+                                
+                                
+                                
+                                
+                                
+                            </tr>
+                            <tr>
+                                <td class="titulos_horas">
+                                    10:05 <br>
+                                    11:00
+                                </td>
+                                <td class="entornos">ENDE <br>
+                                    Polo Or, Ed <br>
+                                    (1 B-301)
+                                     </td>
+                                <td class="bases">BDD <br>
+                                    León Dí, JuEf <br>
+                                    (1 B-301)</td>
+                                <td class="digitalizacion">DASP <br>
+                                    Moli., Cé <br>
+                                    (1 B-301)</td>
+                                <td class="programacion">PROG <br>
+                                    Gall. Cr, Di <br>
+                                    (1 B-301)</td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="9" class="titulo_recreo">recreo</td>
+                            
+                                
+                            </tr>
+                            <tr>
+                                <td class="titulos_horas">
+                                    11:30 <br>
+                                    12:25
+                                </td>
+                                <td rowspan="2" class="programacion">PROG <br>
+                                    Gall. Cr, Di <br>
+                                    (1 B-301) </td>
+                                <td class="bases">BDD <br>
+                                    León Dí, JuEf <br>
+                                    (1 B-301)</td>
+                                <td rowspan=2 class="bases">BDD <br>
+                                    León Dí, JuEf <br>
+                                    (1 B-301)</td>
+                                <td class="fol">IPE- <br>
+                                    Prud. Ga, Es <br>
+                                    (1 b-301)</td>
+                                <td class="programacion">PROG <br>
+                                    Gall. Cr, Di <br>
+                                    (1 B-301)</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="titulos_horas">
+                                    12:25 <br>
+                                    13:20
+                                </td>
+                                <td class="ingles">IPCG <br>
+                                    Sánc. Sa, Lu <br>
+                                    (1 B-301)</td>
+                                <td class="bases">BDD <br>
+                                    León Dí, JuEf <br>
+                                    (1 B-301)</td>
+                                <td rowspan="2" class="fol">IPE- <br>
+                                    Prud. Ga, Es <br>
+                                    (1 b-301)</td>
+                                
+                                
+                                
+                            </tr>
+                            <tr>
+                                <td class="titulos_horas">
+                                    13:20 <br>
+                                    14:15
+                                </td>
+                                <td class="proyecto">PIMD <br>
+                                    Gall. Cr, Di <br>
+                                    (1 B-301)</td>
+                                <td class="sostenibilidad">SASP <br>
+                                    Cerro Vi, LuMade <br>
+                                    (1 B-301)</td>
+                                <td class="lenguaje_marcas">LMSG <br>
+                                    Puli. Mo, FrJo <br>
+                                    (1 B-301)</td>
+                                <td class="ingles">IPCG <br>
+                                    Sánc. Sa, Lu <br>
+                                    (1 B-301)</td>
+                               
+                                
+                            </tr>
+                        </tbody>
+                    </table>  
+
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Luci</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

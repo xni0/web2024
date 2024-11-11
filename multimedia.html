@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/img/ordenador-portatil.png">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3 <img src="/img/dispositivos-responsivos.png" ></h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="multimedia" class="py-3">
+                    <h2 class="text-center">MULTIMEDIA</h2>
+
+                    <div class="container">
+            
+                        <div class="lightbox-gallery">
+                                <div><img src="/img/pexels-catalinac29-29079630.jpg" ></div>
+                                <div><img src="/img/pexels-emilio-garcia-96280844-29105844.jpg" ></div>
+                                <div><img src="/img/pexels-pablo-penades-106560590-10188018.jpg" ></div>
+                                <div><img src="/img/pexels-postiglioni-943507.jpg" ></div>
+                                <div><img src="img/pexels-postiglioni-947168.jpg" ></div>
+                                <div><img src="/img/pexels-postiglioni-947179.jpg" ></div>
+                                <div><img src="/img/pexels-john-finkelstein-680076-1718434.jpg" ></div>
+                                <div><img src="/img/pexels-postiglioni-947172.jpg" ></div>
+                        </div>
+                    </div>
+                
+
+                    <h3>Video:</h3>
+                    <video autoplay controls width="100%">
+                        <source src="/recursos/8441226-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                        <source src="/recursos/8441226-uhd_2560_1440_25fps (1).webm" type="video/webm">
+                    </video>
+                    <h3>Audio:</h3>
+                    <audio controls>
+                        <source src="/recursos/violin-music-64019.mp3" type="audio/mpeg">
+                    </audio>
+                    <h3>Video mediante iframe:</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XaGsUJSWkQk?si=OhtWpMCpt2KCdI8y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Luci</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
