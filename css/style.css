@@ -1,10 +1,13 @@
 body {
     margin: 0;
+    cursor: url('/img/cursor.png'), auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
     box-sizing: border-box;
-    color: rgb(18, 0, 110);
+    color: #236430;
+    
 }
 
 /* For desktop: */
@@ -134,11 +137,11 @@ nav li {
 }
 
 nav li a {
-    color: rgb(18, 0, 110);
+    color: #236430;
 }
 
 nav li:hover {
-    background-color: rgb(225, 245, 253);
+    background-color: #9ee4ac;
 }
 
 .text-right {
@@ -420,16 +423,16 @@ form.form-html5 {
 
 form.form-html5 fieldset {
     padding: 0 30px;
-    background-color: #e2fafa;
+    background-color: #c1efb8;
 }
 form.form-html5 legend {
-    background-color: rgb(10, 3, 70);
+    background-color: rgb(67, 90, 70);
     color: white;
     padding: 8px;
     font-size: 20px;
 }
 form.form-html5 label {
-    background-color: rgb(102, 72, 207);
+    background-color: rgb(69, 143, 78);
     color: white;
 }
 .cb {
@@ -442,11 +445,11 @@ form.form-html5 label {
     font-size: 15px;
 }
 .btn-red {
-    background-color: rgb(78, 6, 6);
+    background-color: #184120;
     color: white;
 }
 .btn-blue {
-    background-color: rgb(22, 3, 68);
+    background-color: #184120;
     color: white;
 }
 
@@ -468,8 +471,8 @@ form.form-html5 label {
   }
   
   .lightbox-gallery div {
-    margin: 10px;
-    flex-basis: 180px;
+    margin: 20px;
+    flex-basis: 200px;
   }
   
   @media only screen and (max-width: 480px) {
@@ -492,7 +495,6 @@ form.form-html5 label {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 20;
     padding-top: 20px;
     box-sizing: border-box;
   }
@@ -512,4 +514,29 @@ form.form-html5 label {
     color: #eee;
   }
   
+  .audio {
+
+    text-align: center;
+  }
+
+   h3 {
+    
+    text-align: center;
+  }
+
+    h2 {
+
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-shadow: 
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,  
+            -1px 1px 0 #000,  
+            1px 1px 0 #000;
+    }
+
+  table{
+    margin: auto;
+  }
+
   
