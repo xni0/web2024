@@ -251,7 +251,7 @@ h1 {
 }
 
 .custom-list {
-    list-style-image: url('/img/corazon.png');
+    list-style-image: url('../img/corazon.png');
 
 
 }
